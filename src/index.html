@@ -1,13 +1,12 @@
 <!doctype html>
-<html ng-app="app" lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Angular App</title>
-  <base href="/">
-</head>
-<body>
-  <div class="container">
-    {{name}}
-  </div>
-</body>
+<html ng-app="webpack" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Angular App</title>
+    <base href="/">
+    <script src="assets/app.bundle.js"></script>
+  </head>
+  <body>
+    <ui-view></ui-view>
+  </body>
 </html>

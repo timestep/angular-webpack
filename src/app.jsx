@@ -1,5 +1,9 @@
-import angular from 'angular';
-import HomeController from './HomeController';
+import * as angular from 'angular';
 
-angular.module('webpack', [])
-  .controller('HomeController', HomeController);
+import home from './home/index.jsx';
+import uirouter from 'angular-ui-router';
+
+import routing from './app.config.jsx';
+
+angular.module('webpack', [uirouter, home])
+  .config(routing);
